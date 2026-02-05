@@ -30,7 +30,7 @@ export const toolModules: ToolModule[] = [
     {
         id: 'prd-generator',
         title: "PRD 生成器",
-        description: "基于简单描述，AI 自动生成结构化的产品需求文档",
+        description: "Anything To PRD，不管是文档、代码还是设计稿",
         icon: (
             <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -38,6 +38,20 @@ export const toolModules: ToolModule[] = [
         ),
         href: "/tools/prd-generator",
         category: 'document',
+        comingSoon: true,
+    },
+    {
+        id: 'dashboard',
+        title: "行业洞察",
+        description: "智能收集分析行业信息，生成专业分析报告",
+        icon: (
+            <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z" />
+            </svg>
+        ),
+        href: "/tools/dashboard",
+        category: 'analysis',
         comingSoon: true,
     },
     {
@@ -68,8 +82,8 @@ export const toolModules: ToolModule[] = [
     },
     {
         id: 'meeting-notes',
-        title: "会议纪要助手",
-        description: "录音转文字，智能提取要点和待办事项",
+        title: "Coming Soon",
+        description: "Coming Soon",
         icon: (
             <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
@@ -79,20 +93,7 @@ export const toolModules: ToolModule[] = [
         category: 'document',
         comingSoon: true,
     },
-    {
-        id: 'dashboard',
-        title: "数据看板",
-        description: "关键指标可视化，快速洞察产品数据趋势",
-        icon: (
-            <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z" />
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z" />
-            </svg>
-        ),
-        href: "/tools/dashboard",
-        category: 'analysis',
-        comingSoon: true,
-    },
+
 ];
 
 // Re-export components for convenience

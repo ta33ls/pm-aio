@@ -24,7 +24,7 @@ export default function Home() {
             <GradientButton href="/tools" size="lg">
               开始使用
             </GradientButton>
-            <GradientButton href="#features" variant="secondary" size="lg">
+            <GradientButton href="/about" variant="secondary" size="lg">
               了解更多
             </GradientButton>
           </div>
@@ -43,7 +43,7 @@ export default function Home() {
             模块化工具，按需取用
           </h2>
           <p className="text-[#5E5D59] text-lg max-w-lg">
-            每一个工具都是独立的效率单元，组合使用，威力倍增
+            每一个工具都是独立的效率单元
           </p>
         </div>
 

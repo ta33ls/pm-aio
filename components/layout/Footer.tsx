@@ -34,10 +34,16 @@ export default function Footer() {
                                     工具中心
                                 </Link>
                                 <Link
-                                    href="#features"
+                                    href="/about"
                                     className="text-[#5E5D59] hover:text-[#141413] text-sm transition-colors"
                                 >
                                     功能介绍
+                                </Link>
+                                <Link
+                                    href="/settings"
+                                    className="text-[#5E5D59] hover:text-[#141413] text-sm transition-colors"
+                                >
+                                    配置API
                                 </Link>
                             </nav>
                         </div>
@@ -45,7 +51,7 @@ export default function Footer() {
                             <h4 className="font-sans text-sm font-medium text-[#141413] mb-4">资源</h4>
                             <nav className="flex flex-col gap-3">
                                 <a
-                                    href="https://github.com"
+                                    href="https://github.com/ta33ls/pm-aio"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="text-[#5E5D59] hover:text-[#141413] text-sm transition-colors"

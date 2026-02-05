@@ -50,7 +50,7 @@ CONNECTOR STYLES:
 - No arrow: edgeStyle=orthogonalEdgeStyle;endArrow=none;html=1;
 
 LAYOUT GUIDELINES:
-- Keep all elements within x: 0-800, y: 0-800
+
 - Use consistent spacing (80-120px between elements)
 - Align elements in clear rows/columns
 - Center the diagram around x=400
