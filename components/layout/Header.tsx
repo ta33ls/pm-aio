@@ -49,23 +49,23 @@ export default function Header() {
                         工具
                     </Link>
                     <Link
-                        href="#features"
-                        className="text-[#5E5D59] hover:text-[#141413] transition-colors duration-200 text-[0.9375rem]"
-                    >
-                        功能
-                    </Link>
-                    <Link
-                        href="#about"
+                        href="/about"
                         className="text-[#5E5D59] hover:text-[#141413] transition-colors duration-200 text-[0.9375rem]"
                     >
                         关于
+                    </Link>
+                    <Link
+                        href="/settings"
+                        className="text-[#5E5D59] hover:text-[#141413] transition-colors duration-200 text-[0.9375rem]"
+                    >
+                        LLM API
                     </Link>
                 </nav>
 
                 {/* Actions */}
                 <div className="flex items-center gap-3">
                     <Link
-                        href="/tools"
+                        href="https://github.com/ta33ls/pm-aio"
                         className="
               px-5 py-2.5 rounded-lg text-[0.9375rem] font-medium
               bg-[#141413] !text-white
@@ -73,7 +73,7 @@ export default function Header() {
               transition-colors duration-200
             "
                     >
-                        开始使用
+                        More
                     </Link>
                 </div>
             </div>

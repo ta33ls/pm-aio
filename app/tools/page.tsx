@@ -17,25 +17,6 @@ export default function ToolsPage() {
                 </p>
             </div>
 
-            {/* Search */}
-            <div className="mb-10 max-w-md">
-                <div className="relative">
-                    <input
-                        type="text"
-                        placeholder="搜索工具..."
-                        className="input pl-11"
-                    />
-                    <svg
-                        className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[#8B8A85]"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                    >
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                    </svg>
-                </div>
-            </div>
-
             {/* Tools Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                 {toolModules.map((module, index) => (

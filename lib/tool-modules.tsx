@@ -16,6 +16,18 @@ export interface ToolModule {
 
 export const toolModules: ToolModule[] = [
     {
+        id: 'flowchart',
+        title: "AI 图表生成",
+        description: "用自然语言描述，自动生成流程图、架构图、组织架构等专业图表",
+        icon: (
+            <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
+            </svg>
+        ),
+        href: "/tools/flowchart",
+        category: 'visualization',
+    },
+    {
         id: 'prd-generator',
         title: "PRD 生成器",
         description: "基于简单描述，AI 自动生成结构化的产品需求文档",
@@ -52,19 +64,6 @@ export const toolModules: ToolModule[] = [
         ),
         href: "/tools/competitor-analysis",
         category: 'analysis',
-        comingSoon: true,
-    },
-    {
-        id: 'flowchart',
-        title: "流程图生成",
-        description: "用自然语言描述流程，自动生成精美流程图",
-        icon: (
-            <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
-            </svg>
-        ),
-        href: "/tools/flowchart",
-        category: 'visualization',
         comingSoon: true,
     },
     {

@@ -63,16 +63,13 @@ export default function Home() {
 
       {/* Bottom CTA */}
       <section id="about" className="container-wide py-24">
-        <div className="text-center p-12 md:p-20 bg-white border border-[rgba(20,20,19,0.06)] rounded-2xl">
-          <h2 className="font-serif text-2xl md:text-3xl text-[#141413] mb-4">
-            准备好提升效率了吗？
+        <div className="mb-16 fade-in">
+          <h2 className="font-serif text-3xl md:text-4xl text-[#141413] mb-4">
+
           </h2>
-          <p className="text-[#5E5D59] mb-10 max-w-md mx-auto">
-            加入我们，体验 AI 驱动的产品管理新方式
+          <p className="text-[#5E5D59] text-lg max-w-lg">
+
           </p>
-          <GradientButton href="/tools" size="lg">
-            立即开始
-          </GradientButton>
         </div>
       </section>
     </div>

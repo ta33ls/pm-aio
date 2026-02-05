@@ -60,10 +60,10 @@ export default function Footer() {
                 {/* Bottom */}
                 <div className="mt-16 pt-8 border-t border-[rgba(20,20,19,0.06)] flex flex-col md:flex-row items-center justify-between gap-4">
                     <p className="text-[#8B8A85] text-sm">
-                        © {currentYear} PM All-in-One
+                        © {currentYear} ta3ls
                     </p>
                     <p className="text-[#8B8A85] text-sm">
-                        用心构建，为产品人而生
+                        build for product manager
                     </p>
                 </div>
             </div>
