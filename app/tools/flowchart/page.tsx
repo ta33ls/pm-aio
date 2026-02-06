@@ -71,6 +71,39 @@ export default function FlowchartPage() {
             }
             cleanXml = cleanXml.trim();
 
+            // Check for empty response or LLM API errors
+            if (!cleanXml) {
+                throw new Error('生成失败：AI 返回了空内容，请检查 API 配置或稍后重试');
+            }
+
+            // Check for common error patterns from LLM relay/proxy
+            const errorPatterns = [
+                /error/i,
+                /failed/i,
+                /invalid.*key/i,
+                /unauthorized/i,
+                /rate.?limit/i,
+                /quota/i,
+                /insufficient/i,
+                /exceeded/i,
+                /timeout/i,
+                /请求失败/,
+                /余额不足/,
+                /密钥无效/,
+                /配额/,
+            ];
+
+            // Only check for errors if the response doesn't look like valid XML
+            const looksLikeXml = cleanXml.includes('<mxCell') || cleanXml.includes('mxCell');
+            if (!looksLikeXml) {
+                const matchedError = errorPatterns.find(pattern => pattern.test(cleanXml));
+                if (matchedError) {
+                    throw new Error(`API 错误：${cleanXml.slice(0, 200)}${cleanXml.length > 200 ? '...' : ''}`);
+                }
+                // If no error pattern matched but still no valid XML
+                throw new Error(`生成失败：AI 返回了无效内容，请重试。返回内容：${cleanXml.slice(0, 100)}${cleanXml.length > 100 ? '...' : ''}`);
+            }
+
             setGeneratedXml(cleanXml);
             setHasGenerated(true);
 
